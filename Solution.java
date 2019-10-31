@@ -21,10 +21,10 @@ public class Solution {
 	Date thesubmitdata = new Date();
 	int thegrade = 100;
 	boolean reported = false;
-
+//constructor
 	public Solution() {
 	}
-
+//it returns the name of the assignment and the grade given to it
 	@Override
 	public String toString() {
 		String string;
@@ -36,22 +36,22 @@ public class Solution {
 
 		return (string);
 	}
-
+//it returns the grade as a string
 	String getGradeString() {
 		if (isReported())
 			return "" + thegrade;
 		else
 			return "-1";
 	}
-
+//it returns the grade for the assignment
 	int getGradeInt() {
 		return thegrade;
 	}
-
+//set reported
 	public void setReported(boolean reported) {
 		this.reported = reported;
 	}
-
+//check if the assignmmet is reported
 	public boolean isReported() {
 		return reported;
 	}
