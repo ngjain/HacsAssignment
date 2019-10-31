@@ -141,11 +141,11 @@ public class Login extends JDialog {
 	public USER_TYPE GetUserType() {
 		return UserType;
 	}
-
+//check if exit is cliecked
 	public boolean isExit() {
 		return m_bExit;
 	}
-
+//exit
 	void buttonExit_actionPerformed(ActionEvent e) {
 		m_bExit = true;
 		hide();
