@@ -10,7 +10,7 @@ import java.awt.event.*;
  * @author Zhang ji Zhu Wei
  * @version 1.0
  */
-
+//swinggggggggggggggggggggggggggggggggg
 public class CourseSelectDlg extends JDialog {
 	// 0 HighLevel presentation 1 LowLevel Experiment
 	ClassCourseList theCourseList;
@@ -24,7 +24,7 @@ public class CourseSelectDlg extends JDialog {
 	JButton OKButton = new JButton();
 	ButtonGroup buttonGroup1 = new ButtonGroup();
 	JButton buttonLogout = new JButton();
-
+//initiwlise window
 	public CourseSelectDlg() {
 		try {
 			jbInit();
@@ -34,7 +34,7 @@ public class CourseSelectDlg extends JDialog {
 			e.printStackTrace();
 		}
 	}
-
+//initialisation
 	private void jbInit() throws Exception {
 		this.getContentPane().setLayout(null);
 		CourseNameCom.setBounds(new Rectangle(155, 41, 203, 22));
