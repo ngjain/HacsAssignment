@@ -19,7 +19,7 @@ abstract public class CourseMenu extends JDialog
 {
   Course theCourse;
   boolean bLogout=true;
-
+//assigning elemnts on screen
   JRadioButton AssignmentRadiao = new JRadioButton();
   JComboBox AssignmentCombox = new JComboBox();
   JButton AssignmentViewButton = new JButton();
@@ -31,7 +31,7 @@ abstract public class CourseMenu extends JDialog
   JButton OptionAddButton = new JButton();
   JButton buttonChangeCourse = new JButton();
   JButton buttonLogout = new JButton();
-
+//constructor
   public CourseMenu()
   {
 
@@ -46,7 +46,7 @@ abstract public class CourseMenu extends JDialog
     setModal(true);
     setSize(503,294);
   }
-
+//jbInit for winodw
   private void jbInit() throws Exception
   {
     buttonChangeCourse.setText("ChangeCourse");
@@ -73,13 +73,15 @@ abstract public class CourseMenu extends JDialog
     this.getContentPane().add(buttonLogout, null);
   }
 
-  /* when the add button is pressed, call add assignment
-  function of facade, after that refresh window
-  */
+  // when the add button is pressed, call add assignment
+ // function of facade, after that refresh window
+  
 
-  /* when the add button is pressed, call ViewAssignment
-  function of facade, after that refresh window
-  */
+  //when the add button is pressed, call ViewAssignment
+ // function of facade, after that refresh window
+
+
+//abstract for functions to be performed by buttons
 
   abstract void ShowMenu(Course theCourse);
   abstract void ShowAddButtons();
@@ -87,7 +89,7 @@ abstract public class CourseMenu extends JDialog
   abstract void ShowRadios();
   abstract void ShowComboxes();
   abstract void ShowLabel();
-
+//functions performed
   void AssignmentAddButton_actionPerformed(ActionEvent e)
   {
     Hacs.theFacade.addAssignment(theCourse);
