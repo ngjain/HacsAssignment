@@ -19,10 +19,13 @@ public class Hacs {
 	}
 
 	public static void main(String[] args) {
+		//user defined
 //		String strUsername;
 //		String strUserType = null;
+	
 		UserInfoItem userinfoitem = new UserInfoItem();
 		theFacade.createCourseList();
+		//create course list
 		while (true) {
 			boolean bExit = false;
 			bExit = theFacade.login(userinfoitem);
