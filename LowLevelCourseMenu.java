@@ -13,10 +13,10 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class LowLevelCourseMenu extends CourseMenu {
-
+//constructor
 	public LowLevelCourseMenu() {
 	}
-
+// swinggggggg
 	void ShowMenu(Course theCourse) {
 		show();
 	}
