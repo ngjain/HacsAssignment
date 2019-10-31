@@ -20,7 +20,7 @@ public class Course {
   int numofass;
   int courselevel;
 
-
+//constructor
   public Course(String strCourse, int theLevel) {
     this.coursename = strCourse;
 
@@ -29,17 +29,17 @@ public class Course {
    // this.AssList = NULL;
     this.numofass = 0;
   }
-  
+  //add a new assignment to assignlist
   public void addAssignment(Assignment newAss)
   {
     assignmentlist.add(newAss);
   }
-  
+ //o string 
   public String toString()
   {
     return coursename;
   }
-  
+ //accept 
   void accept(NodeVisitor visitor)
   {
     visitor.visitCourse(this);
