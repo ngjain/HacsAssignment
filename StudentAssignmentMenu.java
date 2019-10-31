@@ -12,14 +12,14 @@ import java.util.*;
  * @author Zhang ji Zhu Wei
  * @version 1.0
  */
-
+//swingggggggggggggggggg
 public class StudentAssignmentMenu extends AssignmentMenu {
 
 ////  class AssignmentMenu
 	private boolean boolSubmit = false;
 	private Solution theSolution;
 	private Assignment theAssignment;
-
+//initilising butoons and fiedl
 	JLabel lAssignmentName = new JLabel();
 	JLabel lDueDate = new JLabel();
 	JTextField tbSolution = new JTextField();
@@ -27,13 +27,13 @@ public class StudentAssignmentMenu extends AssignmentMenu {
 	JLabel lGrade = new JLabel();
 	JButton bSubmit = new JButton();
 	JButton bCancel = new JButton();
-
+//initilising label
 	JLabel jLabel1 = new JLabel();
 	JLabel jLabel3 = new JLabel();
 	JLabel jLabel5 = new JLabel();
 	JLabel jLabel6 = new JLabel();
 	JLabel jLabel7 = new JLabel();
-
+//constructor
 	public StudentAssignmentMenu() {
 		try {
 			jbInit();
@@ -41,7 +41,7 @@ public class StudentAssignmentMenu extends AssignmentMenu {
 			e.printStackTrace();
 		}
 	}
-
+//init
 	private void jbInit() throws Exception {
 		jLabel1.setText("Assignment : ");
 		jLabel1.setBounds(new Rectangle(20, 36, 91, 18));
