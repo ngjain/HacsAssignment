@@ -10,7 +10,7 @@ import java.util.Iterator;
  * @author Zhang ji Zhu Wei
  * @version 1.0
  */
-
+//iterate through the solutions
 public class SolutionIterator implements Iterator
 {
   SolutionList solutionlist;
