@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * 
  *          Update to Java 8
  */
-
+//creating a list of solution
 public class SolutionList extends ArrayList<Solution> {
 
 	public SolutionList() {
