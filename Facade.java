@@ -19,10 +19,10 @@ public class Facade {
 	private int ncourselevel = 0;
 	ClassCourseList thecourselist;
 	Person theperson;
-
+//comstructor
 	public Facade() {
 	}
-
+//cqll login page
 	static public boolean login(UserInfoItem userinfoItem) {
 		Login login = new Login();
 		login.setModal(true);
@@ -106,7 +106,7 @@ public class Facade {
 		Reminder theReminder = new Reminder();
 		theReminder.showReminder(theperson.GetCourseList());
 	}
-
+//create user
 	void createUser(UserInfoItem userinfoitem) {
 		if (userinfoitem.UserType == UserInfoItem.USER_TYPE.Student) /// student
 		{
