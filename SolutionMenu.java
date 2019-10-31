@@ -16,7 +16,7 @@ import java.io.*;
  * 
  * Update to Java 8
  */
-
+//initialise solitionmenu for using a solution wrt what is required
 public class SolutionMenu extends JDialog {
 
 	public SolutionMenu() {
