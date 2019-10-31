@@ -25,18 +25,18 @@ public class InstructorAssignmentMenu extends AssignmentMenu
   JComboBox CombSolutionList = new JComboBox();
 ////////////////////////
 
-
+//inout for assign details
   JTextField tbAssignmentName = new JTextField();
   JTextField tbDueDate = new JTextField();
   JTextField tbSuggestedSolution = new JTextField();
-
+//initialising labels
   JLabel jLabel1 = new JLabel();
   JLabel jLabel2 = new JLabel();
   JLabel jLabel3 = new JLabel();
   JButton buttonGrade = new JButton();
   JButton buttonReport = new JButton();
   JButton buttonClose = new JButton();
-
+//constructor
   public InstructorAssignmentMenu()
   {
     try
@@ -48,7 +48,9 @@ public class InstructorAssignmentMenu extends AssignmentMenu
       e.printStackTrace();
     }
   }
-  private void jbInit() throws Exception
+//init
+
+private void jbInit() throws Exception
   {
     jLabel1.setText("Assignment Name");
     jLabel1.setBounds(new Rectangle(25, 31, 118, 18));
