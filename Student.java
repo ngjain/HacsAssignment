@@ -10,11 +10,11 @@ package hacs;
  */
 
 public class Student extends Person {
-
+//comstructor
 	public Student() {
 		type = 0; // type=0: student
 	}
-
+//course menu created
 	public CourseMenu createCourseMenu(Course theCourse, int theLevel) {
 
 		if (theLevel == 0) // 0: Highlevel defined in CourseSelectDlg.
@@ -26,7 +26,7 @@ public class Student extends Person {
 		}
 		return theCourseMenu;
 	}
-
+//show menu wrt what the user level is
 	@Override
 	public boolean showMenu() {
 		super.showMenu();
