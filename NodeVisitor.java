@@ -8,17 +8,17 @@ package hacs;
  */
 
 abstract public class NodeVisitor {
-
+//constructor
 	public NodeVisitor() {
 	}
-
+//constructor
 	public NodeVisitor(Object visitee) {
 	}
-
+//visit facde
 	abstract public void visitFacade(Facade facade);
-
+//visit course
 	abstract public void visitCourse(Course course);
-
+//visit assignment
 	abstract public void visitAssignment(Assignment assignment);
 
 }
