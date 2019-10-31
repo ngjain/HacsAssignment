@@ -10,14 +10,14 @@ import java.awt.event.*;
  * @author Zhang ji Zhu Wei
  * @version 1.0
  */
-
+// swingggggggggggg
 public class SolutionGradingDlg extends JDialog {
 	Solution theSolution;
 	JLabel jLabel1 = new JLabel();
 	JTextField tfGrad = new JTextField();
 	JButton buttonOK = new JButton();
 	JLabel labelSolutionFileName = new JLabel();
-
+//constructor
 	public SolutionGradingDlg() {
 		try {
 			jbInit();
@@ -27,7 +27,7 @@ public class SolutionGradingDlg extends JDialog {
 			e.printStackTrace();
 		}
 	}
-
+//init
 	private void jbInit() throws Exception {
 		jLabel1.setText("Solution File Name");
 		jLabel1.setBounds(new Rectangle(23, 30, 121, 18));
@@ -46,7 +46,7 @@ public class SolutionGradingDlg extends JDialog {
 		this.getContentPane().add(labelSolutionFileName, null);
 		this.getContentPane().add(buttonOK, null);
 	}
-
+//show function
 	void show(Solution solution) {
 		theSolution = solution;
 		tfGrad.setText("" + theSolution.getGradeInt());
