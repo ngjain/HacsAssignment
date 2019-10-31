@@ -24,14 +24,14 @@ import java.util.*;
 public class ReminderVisitor extends NodeVisitor {
 
 	Reminder m_Reminder;
-
+//constructor
 	public ReminderVisitor() {
 	}
-
+//reminder visitor constructor
 	public ReminderVisitor(Reminder reminder) {
 		m_Reminder = reminder;
 	}
-
+// iterating through the facde
 	public void visitFacade(Facade facade) {
 		CourseIterator courseList = new CourseIterator(facade.thecourselist);
 		while (courseList.hasNext()) {
@@ -39,7 +39,7 @@ public class ReminderVisitor extends NodeVisitor {
 			course.accept(this);
 		}
 	}
-
+//iterate thriugh a course 
 	public void visitCourse(Course course) {
 		Iterator<Assignment> assignmentList = course.assignmentlist.listIterator();
 		while (assignmentList.hasNext()) {
@@ -47,7 +47,7 @@ public class ReminderVisitor extends NodeVisitor {
 			assignment.accept(this);
 		}
 	}
-
+// check if assignmnent is overdue
 	public void visitAssignment(Assignment assignment) {
 		Date today = new Date();
 		Calendar calendar = Calendar.getInstance();
