@@ -20,7 +20,7 @@ class AssignmentTest {
 
 	@Test
 	final void testAssignment() {
-		//constructor	
+		//constructortested	
 		System.out.println("assignment object created.");
 	}
 
