@@ -15,17 +15,17 @@ public class CourseIterator implements Iterator
 {
   ClassCourseList theCourseList;
   int CurrentCourseNumber=-1;
-
-
+//initialised to previous element of 1st array element
+//constructor
   public CourseIterator()
   {
   }
-
+//constructor
   public CourseIterator(ClassCourseList courseList)
   {
     theCourseList=courseList;
   }
-
+//check if next elemt exists
   public boolean hasNext()
   {
     if (CurrentCourseNumber>=theCourseList.size()-1)
@@ -33,7 +33,7 @@ public class CourseIterator implements Iterator
     else
       return true;
   }
-
+//gives next value
   public Object next()
   {
     if (hasNext()==true)
@@ -46,7 +46,9 @@ public class CourseIterator implements Iterator
       return null;
     }
   }
-  public void remove()
+
+//remove an element
+public void remove()
   {
     theCourseList.remove(CurrentCourseNumber);
   }
