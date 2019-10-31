@@ -19,17 +19,17 @@ public class HighLevelCourseMenu extends CourseMenu {
 	 * JRadioButton(); JComboBox OptionCombo = new JComboBox(); JButton
 	 * OptionViewButton = new JButton(); JButton OptionAddButton = new JButton();
 	 */
-
+//constructor
 	public HighLevelCourseMenu() {
 	}
-
+//show the differ t buttons in a high level course menu
 	void ShowMenu(Course theCourse) {
 		ShowViewButtons();
 		ShowRadios();
 		ShowComboxes();
 		show();
 	}
-
+//performing functions
 	void ShowAddButtons() {
 		AssignmentAddButton.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -43,7 +43,7 @@ public class HighLevelCourseMenu extends CourseMenu {
 		this.getContentPane().add(AssignmentAddButton, null);
 		this.getContentPane().add(OptionAddButton, null);
 	}
-
+//same 
 	void ShowRadios() {
 		AssignmentRadiao.setText("Assignment");
 		AssignmentRadiao.setBounds(new Rectangle(21, 55, 103, 26));
@@ -52,7 +52,7 @@ public class HighLevelCourseMenu extends CourseMenu {
 		OptionRadio.setBounds(new Rectangle(21, 128, 103, 26));
 		this.getContentPane().add(OptionRadio, null);
 	}
-
+//same
 	void ShowComboxes() {
 		AssignmentCombox.setBounds(new Rectangle(140, 57, 126, 22));
 		OptionCombo.setBounds(new Rectangle(137, 127, 126, 22));
