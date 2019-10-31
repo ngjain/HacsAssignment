@@ -15,9 +15,15 @@ import java.io.*;
  * @version 1.0
  */
 
+
+
 abstract public class AssignmentMenu extends JDialog
 {
+//abstract for showing a specified menu for a given assign
   abstract void ShowMenu(Assignment ass,Person per);
+  
+  //swinggggggggggg
+  //assignmenu displayed
   public AssignmentMenu()
   {
     setModal(true);
