@@ -41,7 +41,9 @@ class FacadeTest {
 	final void testLogin() {
 		//Login is called that uses swing
 	}
+	
 
+	// test if assugnment can be added
 	@Test
 	final void testAddAssignment() {
 		theCourse.addAssignment(newass);
@@ -58,14 +60,15 @@ class FacadeTest {
 		//SWINGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
 	}
 
-	@Test
+	//check if fncion can be reportd
+	@Test 
 	final void testReportSolutions() {
 		facade.reportSolutions(newass);
 		theCourse.addAssignment(newass);
-		
 		assertEquals(theCourse.assignmentlist.size(),1);
 	}
 
+	//check if solution can be submitted
 	@Test
 	final void testSubmitSolution() {
 		
