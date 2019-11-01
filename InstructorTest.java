@@ -28,7 +28,7 @@ class InstructorTest {
 	@AfterEach
 	void tearDown() throws Exception {
 	}
-// Checking that for a given course we get a coursemenu
+// Checking that for a given course we get a coursemenu. The functionality of course menu is given in couremenu test
 	@Test
 	final void testCreateCourseMenu() {
 		CourseMenu testcreatecouremenu = instructor.createCourseMenu( theCourse,  theLevel);
