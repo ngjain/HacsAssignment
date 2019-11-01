@@ -26,7 +26,7 @@ class UserInfoItemTest {
 	@AfterEach
 	void tearDown() throws Exception {
 	}
-
+//Nothing
 	@Test
 	final void test() {
 		System.out.println("Nothiing to test");
