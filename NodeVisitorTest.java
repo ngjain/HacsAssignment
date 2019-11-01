@@ -2,6 +2,8 @@ package hacs;
 
 //import static org.junit.jupiter.api.Assertions.*;
 
+/** Incldes mostly abstract classes and thus cannot be tested**/
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
