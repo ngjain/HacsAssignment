@@ -9,11 +9,13 @@ class SolutionIteratorTest {
 	Solution solution = new Solution();
 	SolutionList solutionList = new SolutionList();
 
+	//constructor
 	@Test
 	void testSolutionIterator() {
 		System.out.println("Initialized Solution Iterator");
 	}
 
+	//cehck for solution siterator existence aftrcreatin
 	@Test
 	void testSolutionIteratorSolutionList() {
 		solutionList.add(solution);
@@ -21,6 +23,7 @@ class SolutionIteratorTest {
 		assertTrue(solutionIterator.hasNext());
 	}
 
+	//checck if value is moved to 1st
 	@Test
 	void testMoveToHead() {
 		solutionList.add(solution);
@@ -29,6 +32,7 @@ class SolutionIteratorTest {
 		assertEquals(-1, solutionIterator.getCurrentSolutionNumber());
 	}
 
+	// check if nex value exists
 	@Test
 	void testHasNext() {
 		solutionList.add(solution);
@@ -36,6 +40,7 @@ class SolutionIteratorTest {
 		assertTrue(solutionIterator.hasNext());
 	}
 
+	//check if we move and return next value
 	@Test
 	void testNext() {
 		solutionList.add(solution);
@@ -43,6 +48,7 @@ class SolutionIteratorTest {
 		assertNotNull(solutionIterator.next());
 	}
 
+	//Similar to above
 	@Test
 	void testNextString() {
 		solution.setTheAuthor("Test Author");
@@ -51,6 +57,7 @@ class SolutionIteratorTest {
 		assertNotNull(solutionIterator.next("Test Author"));
 	}
 
+	//remove a  given value tested
 	@Test
 	void testRemove() {
 		solutionList.add(solution);
