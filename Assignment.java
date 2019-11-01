@@ -1,3 +1,4 @@
+
 package hacs;
 
 /**
@@ -14,7 +15,7 @@ import java.text.DateFormat;
 
 public class Assignment {
 
-  protected String assignmentname;
+  protected String assignmentname ;
   protected String strassignmentfilename;
   protected Date duedate=new Date();
   protected String assspec;
@@ -33,7 +34,7 @@ public class Assignment {
   public void setAssSpec(String theSpec){
     this.assspec = theSpec;
   }
-//check if late
+//check if late fro submission
   public boolean isOverDue(){
     Date today;
     today = new Date();
@@ -63,12 +64,12 @@ public class Assignment {
 	  return thesolutionlist;
   }
 
- // return the solution of the give name
   
+ // return the solution of the give name
   public Solution getSolution(String studentname)
   {
-    SolutionIterator Iterator=(SolutionIterator)thesolutionlist.iterator();
-    return (Solution)Iterator.next(studentname);
+    Iterator<Solution> Iterator=thesolutionlist.iterator();
+    return (Solution)Iterator.next();
   }
 // get sug solution
   public Solution getSugSolution(){
@@ -100,5 +101,9 @@ public class Assignment {
 public Object getAssSpec() {
 	// TODO Auto-generated method stub
 	return assspec;
+}
+public void setAssignmentName(String string) {
+	assignmentname = string;
+	
 }
 }

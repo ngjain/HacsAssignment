@@ -1,6 +1,6 @@
 package hacs;
 
-import java.io.IOException;
+//import java.io.IOException;
 
 import org.
 junit.jupiter.api.AfterEach;
@@ -26,18 +26,18 @@ class HacsTest {
 		System.out.println("assignment object created.");
 	}
 
-	@Test
+	/*@Test
 	final void testMain() throws IOException {
 		
 		
 		Hacs.main(new String[] {});
-		   /** System.out.println("main");
+		    System.out.println("main");
 		    String[] args = null;
 		    final java.io.InputStream original = System.in;
 		    final FileInputStream fips = new FileInputStream(new File('C:\\Users\\ngjain\\eclipse-workspace\\HacsAssignment\\src\\hacs\\Hacs.java'));
 		    System.setIn(fips);
 		    Hacs.main(args);
-		    System.setIn(original);**/
-		}
+		    System.setIn(original);
+		}*/
 	}
 

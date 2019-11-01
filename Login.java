@@ -1,5 +1,5 @@
 package hacs;
-
+//SWINGGGGGGGGGGGGGGGGGGGGGGGGG
 import javax.swing.*;
 
 import hacs.UserInfoItem.USER_TYPE;
@@ -21,6 +21,8 @@ import java.io.*;
 
 public class Login extends JDialog {
 
+	
+	private static final long serialVersionUID = 1L;
 	boolean m_bExit = false;
 	JLabel jLabel1 = new JLabel();
 	JLabel jLabel2 = new JLabel();
@@ -108,7 +110,7 @@ public class Login extends JDialog {
 					LoginName = UserName;
 			}
 			if (LoginName != null) {
-				this.hide();
+				this.setVisible(false);
 			}
 		} catch (Exception ee) {
 			;
@@ -148,6 +150,6 @@ public class Login extends JDialog {
 //exit
 	void buttonExit_actionPerformed(ActionEvent e) {
 		m_bExit = true;
-		hide();
+		setVisible(false);
 	}
 }

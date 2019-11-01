@@ -1,9 +1,8 @@
 package hacs;
-
+//SWINGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.*;
 import java.util.*;
 
 /**
@@ -15,7 +14,9 @@ import java.util.*;
 //swingggggggggggggggggg
 public class StudentAssignmentMenu extends AssignmentMenu {
 
-////  class AssignmentMenu
+
+	private static final long serialVersionUID = 1L;
+	////  class AssignmentMenu
 	private boolean boolSubmit = false;
 	private Solution theSolution;
 	private Assignment theAssignment;
@@ -113,7 +114,7 @@ public class StudentAssignmentMenu extends AssignmentMenu {
 		lDueDate.setText(theAssignment.duedate.toString());
 		lSuggestedSolution.setText(theAssignment.suggestsolution.solutionfilename);
 
-		show();
+		setVisible(true);
 
 		if (boolSubmit == true) {
 			if (theSolution == null) {
@@ -128,12 +129,12 @@ public class StudentAssignmentMenu extends AssignmentMenu {
 
 	void bSubmit_actionPerformed(ActionEvent e) {
 		boolSubmit = true;
-		hide();
+		setVisible(false);
 	}
 
 	void bCancel_actionPerformed(ActionEvent e) {
 		boolSubmit = false;
-		hide();
+		setVisible(false);
 	}
 
 }

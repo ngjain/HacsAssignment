@@ -28,7 +28,7 @@ class StudentTest {
 	@AfterEach
 	void tearDown() throws Exception {
 	}
-
+	// Checking that for a given course we get a coursemenu
 	@Test
 	final void testCreateCourseMenu() {
 		CourseMenu testcreatecouremenu = student.createCourseMenu( theCourse,  theLevel);

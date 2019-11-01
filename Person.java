@@ -42,7 +42,7 @@ abstract public class Person {
 	}
 
 	public void show() {
-		theCourseMenu.show();
+		theCourseMenu.setVisible(true);
 	}
 
 	public boolean ifLogout() {
@@ -53,7 +53,7 @@ abstract public class Person {
 	public boolean showMenu() {
 		// create a iterator for the assignment list
                 //    Iterator theIter=new ListIterator(CurrentCourse.AssList );
-		Iterator theIter = CurrentCourse.assignmentlist.iterator();
+		Iterator<?> theIter = CurrentCourse.assignmentlist.iterator();
 		theCourseMenu.theCourse = CurrentCourse;
 		Assignment theAssignment;
 		while (theIter.hasNext()) {

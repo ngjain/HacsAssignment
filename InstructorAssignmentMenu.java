@@ -3,7 +3,6 @@ package hacs;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.*;
 import java.text.DateFormat;
 
 /**
@@ -18,11 +17,9 @@ import java.text.DateFormat;
 public class InstructorAssignmentMenu extends AssignmentMenu
 {
 	private static final long serialVersionUID = 1L;
-////  class AssignmentMenu
-  private boolean bSubmit=false;
-  private Solution theSolution;
+private Solution theSolution;
   private Assignment theAssignment;
-  JComboBox CombSolutionList = new JComboBox();
+  JComboBox<Solution> CombSolutionList = new JComboBox<Solution>();
 ////////////////////////
 
 //inout for assign details
@@ -107,14 +104,13 @@ private void jbInit() throws Exception
   public void ShowMenu(Assignment assignment, Person person)
   {
     theAssignment=assignment;
-    Solution theSolution;
     tbAssignmentName.setText(theAssignment.assignmentname );
 
     DateFormat theDateFormat=DateFormat.getDateInstance(DateFormat.SHORT );
     tbDueDate.setText(theDateFormat.format(theAssignment.duedate));
     tbSuggestedSolution.setText(theAssignment.suggestsolution.solutionfilename );
     refreshSolutionList();
-    show();
+    setVisible(true);
   }
 
   void buttonClose_actionPerformed(ActionEvent e)
@@ -126,7 +122,7 @@ private void jbInit() throws Exception
       theAssignment.duedate=tempDateFormat.parse(tbDueDate.getText() );
     }catch (Exception ee){};
     theAssignment.suggestsolution.solutionfilename =tbSuggestedSolution.getText() ;
-    hide();
+    setVisible(false);
   }
 
   void buttonGrade_actionPerformed(ActionEvent e)

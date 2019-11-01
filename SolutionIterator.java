@@ -11,7 +11,7 @@ import java.util.Iterator;
  * @version 1.0
  */
 //iterate through the solutions
-public class SolutionIterator implements Iterator
+public class SolutionIterator implements Iterator<Object>
 {
   SolutionList solutionlist;
 
@@ -79,6 +79,10 @@ public class SolutionIterator implements Iterator
     solutionlist.remove(CurrentSolutionNumber);
 //    throw new java.lang.UnsupportedOperationException("Method remove() not yet implemented.");
   }
+public int getCurrentSolutionNumber() {
+	
+	return CurrentSolutionNumber;
+}
 
 
 }

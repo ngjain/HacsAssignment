@@ -8,11 +8,13 @@ package hacs;
  * @author Zhang ji Zhu Wei
  * @version 1.0
  */
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
 public class HighLevelCourseMenu extends CourseMenu {
+
+	
+	private static final long serialVersionUID = 1L;
 
 	/*
 	 * JButton AssignmentAddButton = new JButton(); JRadioButton OptionRadio = new
@@ -27,7 +29,7 @@ public class HighLevelCourseMenu extends CourseMenu {
 		ShowViewButtons();
 		ShowRadios();
 		ShowComboxes();
-		show();
+		setVisible(true);
 	}
 //performing functions
 	void ShowAddButtons() {

@@ -27,7 +27,7 @@ public class Solution {
 //it returns the name of the assignment and the grade given to it
 	@Override
 	public String toString() {
-		String string;
+		String string = "";
 		string = theauthor + "  " + solutionfilename + " Grade=" + getGradeInt() + "  ";
 		if (isReported())
 			string += "reported";
@@ -54,5 +54,9 @@ public class Solution {
 //check if the assignmmet is reported
 	public boolean isReported() {
 		return reported;
+	}
+	public void setTheAuthor(String string) {
+		theauthor = string;
+		
 	}
 }

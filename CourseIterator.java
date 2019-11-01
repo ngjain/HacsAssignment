@@ -1,5 +1,6 @@
 package hacs;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
@@ -11,7 +12,7 @@ import java.util.Iterator;
  * @version 1.0
  */
 
-public class CourseIterator implements Iterator
+public class CourseIterator implements Iterator<Object>
 {
   ClassCourseList theCourseList;
   int CurrentCourseNumber=-1;
@@ -68,6 +69,10 @@ public void remove()
     }
     return null;
   }
+public ArrayList<Course> getTheCourseList() {
+	
+	return theCourseList;
+}
 
 
 }

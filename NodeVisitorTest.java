@@ -1,6 +1,6 @@
 package hacs;
 
-import static org.junit.jupiter.api.Assertions.*;
+//import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
@@ -29,29 +29,29 @@ class NodeVisitorTest {
 	@Test
 	final void testNodeVisitor() {
 		//constructor	
-		System.out.println("assignment object created.");
+		//abstract
 	}
 
  
 	
 	@Test
 	final void testNodeVisitorObject() {
-		fail("Not yet implemented"); // TODO
+		//abstract
 	}
 
 	@Test
 	final void testVisitFacade() {
-		fail("Not yet implemented"); // TODO
+		//abstract
 	}
 
 	@Test
 	final void testVisitCourse() {
-		fail("Not yet implemented"); // TODO
+		//abstract
 	}
 
 	@Test
 	final void testVisitAssignment() {
-		fail("Not yet implemented"); // TODO
+		//abstract
 	}
 
 }

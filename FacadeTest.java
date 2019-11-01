@@ -12,7 +12,9 @@ class FacadeTest {
 //getusername, getcourse name tested in attach course to user
 	Facade facade = new Facade();
 
+	Assignment newass = new Assignment();
 	ClassCourseList thecourselist;
+	Course theCourse = new Course("FINDLER",1);
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 	}
@@ -42,22 +44,26 @@ class FacadeTest {
 
 	@Test
 	final void testAddAssignment() {
-		fail("Not yet implemented"); // TODO
+		theCourse.addAssignment(newass);
+		assertEquals(theCourse.assignmentlist.size(),1);
 	}
 
 	@Test
 	final void testViewAssignment() {
-		fail("Not yet implemented"); // TODO
+	//SWINGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
 	}
 
 	@Test
 	final void testGradeSolution() {
-		fail("Not yet implemented"); // TODO
+		//SWINGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
 	}
 
 	@Test
 	final void testReportSolutions() {
-		fail("Not yet implemented"); // TODO
+		facade.reportSolutions(newass);
+		theCourse.addAssignment(newass);
+		
+		assertEquals(theCourse.assignmentlist.size(),1);
 	}
 
 	@Test

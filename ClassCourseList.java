@@ -14,6 +14,8 @@ import java.io.*;
 
 public class ClassCourseList extends ArrayList<Course> {
 
+	
+	private static final long serialVersionUID = 1L;
 	public ClassCourseList() {
 	}
 
@@ -28,6 +30,7 @@ public class ClassCourseList extends ArrayList<Course> {
 				theCourse = new Course(strCourseName, 0);
 //                              theCourse.CourseName= strCourseName;
 				add(theCourse);
+				file.close();
 			}
 		} catch (Exception ee) {
 			;

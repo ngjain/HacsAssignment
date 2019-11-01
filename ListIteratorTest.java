@@ -58,7 +58,6 @@ class ListIteratorTest {
 	final void testNext() {
 		assertEquals(listiterator.next(), "bar");
 	}
-//REDOOOOOOOOOOOOOOOOOOOOOOOO
 	@Test
 	final void testRemove() {
 

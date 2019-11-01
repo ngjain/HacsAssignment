@@ -20,7 +20,7 @@ class AssignmentTest {
 
 	@Test
 	final void testAssignment() {
-		//constructortested	
+		//constructor tested	
 		System.out.println("assignment object created.");
 	}
 
@@ -35,14 +35,14 @@ class AssignmentTest {
 
 	@Test
 	final void testSetAssSpec() {
-		String input = "SER 515 Assignment";
+		String input = "515 Assignment";
 		assignment.setAssSpec(input);
 		assertEquals(input, assignment.getAssSpec());
 	}
 
 	@Test
 	final void testIsOverDue() {
-		assertEquals(false, assignment.isOverDue());
+		assertEquals(true, assignment.isOverDue());
 	}
 
 	@Test
@@ -64,17 +64,16 @@ class AssignmentTest {
 	final void testGetSolutionList() {
 		//Called in test add slution
 	}
-//REDOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+//REDOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
 	@Test
 	final void testGetSolution() {
 	
-	        Solution testgetsolution = assignment.getSolution("Author");
-	        assertEquals( false, testgetsolution instanceof Solution);
+	        Solution testgetsolution = new Solution();
+	        assertEquals( testgetsolution, assignment.getSolution("") );
 	}
 	
 	@Test
 	final void testGetSugSolution() {
-		
 		assertEquals(true, assignment.getSugSolution() instanceof Solution );
 	}
 
@@ -82,10 +81,11 @@ class AssignmentTest {
 	final void testGetSolutionIterator() {
 		assertEquals(true, assignment.getSolutionIterator() instanceof SolutionIterator );
 	}
-
+//Test toString and set Assginment Name
 	@Test
 	final void testToString() {
-		assertEquals(true, assignment.toString() instanceof String );
+		assignment.setAssignmentName("assignmenttest");
+		assertEquals("assignmenttest", assignment.toString());
 	}
 
 	@Test

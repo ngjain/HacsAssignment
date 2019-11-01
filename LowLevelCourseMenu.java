@@ -8,17 +8,19 @@ package hacs;
  * @author Zhang ji Zhu Wei
  * @version 1.0
  */
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
 public class LowLevelCourseMenu extends CourseMenu {
-//constructor
+
+	private static final long serialVersionUID = 1L;
+
+	//constructor
 	public LowLevelCourseMenu() {
 	}
 // swinggggggg
 	void ShowMenu(Course theCourse) {
-		show();
+		setVisible(true);
 	}
 
 	void ShowAddButtons() {

@@ -14,10 +14,12 @@ import java.util.Iterator;
  * @author Zhang ji Zhu Wei
  * @version 1.0
  */
-
+//swingggggggggggggggggggggggggggggggggggggggggggggg
 abstract public class CourseMenu extends JDialog
 {
-  Course theCourse;
+
+	private static final long serialVersionUID = 1L;
+Course theCourse;
   boolean bLogout=true;
 //assigning elemnts on screen
   JRadioButton AssignmentRadiao = new JRadioButton();
@@ -103,7 +105,7 @@ abstract public class CourseMenu extends JDialog
   void refresh()
   {
     AssignmentCombox.removeAllItems() ;
-    Iterator Iter=theCourse.assignmentlist.iterator() ;
+    Iterator<?> Iter=theCourse.assignmentlist.iterator() ;
     while(Iter.hasNext() )
     {
       AssignmentCombox.addItem(Iter.next() );
@@ -113,13 +115,13 @@ abstract public class CourseMenu extends JDialog
   void buttonChangeCourse_actionPerformed(ActionEvent e)
   {
     bLogout=false;
-    hide();
+    setVisible(false);
   }
 
   void buttonLogout_actionPerformed(ActionEvent e)
   {
     bLogout=true;
-    hide();
+    setVisible(false);
   }
   boolean ifLogout()
   {

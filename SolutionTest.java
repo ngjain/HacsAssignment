@@ -35,7 +35,7 @@ class SolutionTest {
 
 	@Test
 	final void testToString() {
-		assertEquals(solution.toString() instanceof String, true);
+		assertEquals(solution.toString().contains("100"),true);
 	}
 
 	@Test

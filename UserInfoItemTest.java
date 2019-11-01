@@ -1,6 +1,7 @@
 package hacs;
-
-import static org.junit.jupiter.api.Assertions.*;
+//Nothing to test here as USERInFO item has been already tested earlier like 
+//theFacade.createUser(userinfoitem); line 36 Hacs.java
+//import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;

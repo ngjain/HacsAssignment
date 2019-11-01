@@ -66,5 +66,9 @@ public class ReminderVisitor extends NodeVisitor {
 		}
 
 	}
+	public Object getM_Reminder() {
+		
+		return m_Reminder;
+	}
 
 }

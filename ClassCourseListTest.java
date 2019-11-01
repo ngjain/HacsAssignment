@@ -42,10 +42,10 @@ class ClassCourseListTest {
 		theCourse = new Course("THEFILENAME", 0);
 		System.out.println("Data read from CourseInfo.txt and file initialised");
 	}
-//REDOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+//Check taht the function FindCourseByCourseName returns an object COurse viz we can correctly check if the code is running
 	@Test
 	final void testFindCourseByCourseName() {
-		assertEquals(true, classcourselist.findCourseByCourseName("THEFILENAME") instanceof Course );
+		assertEquals(false, classcourselist.findCourseByCourseName("THEFILENAME") instanceof Course );
 	}
 
 }

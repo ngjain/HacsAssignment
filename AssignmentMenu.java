@@ -1,9 +1,6 @@
 package hacs;
 
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.io.*;
 
 
 /**
@@ -19,6 +16,9 @@ import java.io.*;
 
 abstract public class AssignmentMenu extends JDialog
 {
+
+	private static final long serialVersionUID = 1L;
+
 //abstract for showing a specified menu for a given assign
   abstract void ShowMenu(Assignment ass,Person per);
   

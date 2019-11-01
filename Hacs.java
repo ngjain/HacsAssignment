@@ -28,7 +28,7 @@ public class Hacs {
 		//create course list
 		while (true) {
 			boolean bExit = false;
-			bExit = theFacade.login(userinfoitem);
+			bExit = Facade.login(userinfoitem);
 			if (bExit)
 				break;
 			// userinfoitem.strUserName = "Inst1";
