@@ -46,11 +46,13 @@ class CourseTest {
 		assertEquals(course.assignmentlist.contains(assignment), true);
 	}
 
+	//check if course name is eturned as string
 	@Test
 	final void testToString() {
 		assertEquals(course.toString(),"StrCourse");
 	}
-//accpt tested
+
+	//accpt tested
 	@Test
 	final void testAccept() {
 		System.out.println("accept called");	
