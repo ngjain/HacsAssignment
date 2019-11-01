@@ -8,11 +8,13 @@ class CourseIteratorTest {
 
 	ClassCourseList classCourseList = new ClassCourseList();
 
+	//Constructor
 	@Test
 	void testCourseIterator() {
 		System.out.println("Initialized CourseIterator");
 	}
 
+	//Check reation of list
 	@Test
 	void testCourseIteratorList() {
 		Course course = new Course("Test Course", 1);
@@ -21,6 +23,7 @@ class CourseIteratorTest {
 		assertEquals(1, courseIterator.getTheCourseList().size());
 	}
 
+	//Check if course has next valu
 	@Test
 	void testHasNext() {
 		Course course = new Course("Test Course", 1);
@@ -29,6 +32,7 @@ class CourseIteratorTest {
 		assertTrue(courseIterator.hasNext());
 	}
 
+	// get the next value
 	@Test
 	void testNext() {
 		Course course = new Course("Test Course", 1);
@@ -37,6 +41,7 @@ class CourseIteratorTest {
 		assertNotNull(courseIterator.next());
 	}
 
+	// remove a value
 	@Test
 	void testRemove() {
 		Course course = new Course("Test Course", 1);
@@ -47,6 +52,7 @@ class CourseIteratorTest {
 		assertEquals(0, courseIterator.getTheCourseList().size());
 	}
 
+	//test the next string is returned
 	@Test
 	void testNextString() {
 		Course course = new Course("Test Course", 1);
