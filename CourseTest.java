@@ -50,7 +50,7 @@ class CourseTest {
 	final void testToString() {
 		assertEquals(course.toString(),"StrCourse");
 	}
-//
+//accpt tested
 	@Test
 	final void testAccept() {
 		System.out.println("accept called");	
