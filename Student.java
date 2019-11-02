@@ -14,6 +14,7 @@ public class Student extends Person {
 	public Student() {
 		type = 0; // type=0: student
 	}
+
 //course menu created
 	public CourseMenu createCourseMenu(Course theCourse, int theLevel) {
 
@@ -26,6 +27,7 @@ public class Student extends Person {
 		}
 		return theCourseMenu;
 	}
+
 //show menu wrt what the user level is
 	@Override
 	public boolean showMenu() {

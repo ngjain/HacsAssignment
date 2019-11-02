@@ -14,13 +14,14 @@ import java.awt.event.*;
 public class Reminder extends JDialog {
 
 	private static final long serialVersionUID = 1L;
-	//initiliase variables
+	// initiliase variables
 	ClassCourseList CourseList;
 	JLabel jLabel1 = new JLabel();
 	JLabel jLabel2 = new JLabel();
 	java.awt.List listUpcoming = new java.awt.List();
 	java.awt.List listOverdue = new java.awt.List();
 	Button buttonOK = new Button();
+
 //constructor
 	public Reminder() {
 		try {
@@ -31,6 +32,7 @@ public class Reminder extends JDialog {
 			e.printStackTrace();
 		}
 	}
+
 // init
 	private void jbInit() throws Exception {
 		jLabel1.setText("Upcoming assignments");
@@ -53,6 +55,7 @@ public class Reminder extends JDialog {
 		this.getContentPane().add(listOverdue, null);
 		this.getContentPane().add(buttonOK, null);
 	}
+
 //shiw reminder for course given
 	void showReminder(ClassCourseList courseList) {
 		ReminderVisitor visitor = new ReminderVisitor(this);

@@ -8,7 +8,6 @@ package hacs;
  * @version 1.0
  */
 
-
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Date;
@@ -21,12 +20,14 @@ class ReminderVisitorTest {
 	void testReminderVisitor() {
 		System.out.println("Initialized reminder visitor");
 	}
+
 //reminder visitor second constrctor
 	@Test
 	void testReminderVisitorReminder() {
 		ReminderVisitor reminderVisitor = new ReminderVisitor(new Reminder());
 		assertNotNull(reminderVisitor.getM_Reminder());
 	}
+
 // cheksassignment by initialisig it and checking if it's empty
 	@Test
 	void testVisitAssignment() {

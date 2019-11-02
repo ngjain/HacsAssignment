@@ -15,9 +15,10 @@ import org.junit.jupiter.api.Test;
 class LowLevelCourseMenuTest {
 
 	LowLevelCourseMenu lowlevelcoursemenu = new LowLevelCourseMenu();
+
 	@Test
 	void testLowLevelCourseMenu() {
-		//constructor
+		// constructor
 		System.out.println("lowlevelcoursemenu object created.");
 	}
 

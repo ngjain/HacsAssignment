@@ -13,7 +13,6 @@ import java.awt.event.*;
 
 public class HighLevelCourseMenu extends CourseMenu {
 
-	
 	private static final long serialVersionUID = 1L;
 
 	/*
@@ -24,6 +23,7 @@ public class HighLevelCourseMenu extends CourseMenu {
 //constructor
 	public HighLevelCourseMenu() {
 	}
+
 //show the differ t buttons in a high level course menu
 	void ShowMenu(Course theCourse) {
 		ShowViewButtons();
@@ -31,6 +31,7 @@ public class HighLevelCourseMenu extends CourseMenu {
 		ShowComboxes();
 		setVisible(true);
 	}
+
 //performing functions
 	void ShowAddButtons() {
 		AssignmentAddButton.addActionListener(new java.awt.event.ActionListener() {
@@ -45,6 +46,7 @@ public class HighLevelCourseMenu extends CourseMenu {
 		this.getContentPane().add(AssignmentAddButton, null);
 		this.getContentPane().add(OptionAddButton, null);
 	}
+
 //same 
 	void ShowRadios() {
 		AssignmentRadiao.setText("Assignment");
@@ -54,6 +56,7 @@ public class HighLevelCourseMenu extends CourseMenu {
 		OptionRadio.setBounds(new Rectangle(21, 128, 103, 26));
 		this.getContentPane().add(OptionRadio, null);
 	}
+
 //same
 	void ShowComboxes() {
 		AssignmentCombox.setBounds(new Rectangle(140, 57, 126, 22));

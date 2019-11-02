@@ -14,8 +14,8 @@ import java.io.*;
 
 public class ClassCourseList extends ArrayList<Course> {
 
-	
 	private static final long serialVersionUID = 1L;
+
 	public ClassCourseList() {
 	}
 
@@ -36,6 +36,7 @@ public class ClassCourseList extends ArrayList<Course> {
 			;
 		}
 	}
+
 //finding a course using it's name
 	Course findCourseByCourseName(String CourseName) {
 		int nCourseCount = size();

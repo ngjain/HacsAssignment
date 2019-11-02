@@ -1,4 +1,5 @@
 package hacs;
+
 //SWINGGGGGGGGGGGGGGGGGGGGGGGGG
 import javax.swing.*;
 
@@ -21,7 +22,6 @@ import java.io.*;
 
 public class Login extends JDialog {
 
-	
 	private static final long serialVersionUID = 1L;
 	boolean m_bExit = false;
 	JLabel jLabel1 = new JLabel();
@@ -143,10 +143,12 @@ public class Login extends JDialog {
 	public USER_TYPE GetUserType() {
 		return UserType;
 	}
+
 //check if exit is cliecked
 	public boolean isExit() {
 		return m_bExit;
 	}
+
 //exit
 	void buttonExit_actionPerformed(ActionEvent e) {
 		m_bExit = true;

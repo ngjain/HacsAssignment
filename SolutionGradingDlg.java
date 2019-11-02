@@ -12,13 +12,14 @@ import java.awt.event.*;
  */
 // swingggggggggggg
 public class SolutionGradingDlg extends JDialog {
-	
+
 	private static final long serialVersionUID = 1L;
 	Solution theSolution;
 	JLabel jLabel1 = new JLabel();
 	JTextField tfGrad = new JTextField();
 	JButton buttonOK = new JButton();
 	JLabel labelSolutionFileName = new JLabel();
+
 //constructor
 	public SolutionGradingDlg() {
 		try {
@@ -29,6 +30,7 @@ public class SolutionGradingDlg extends JDialog {
 			e.printStackTrace();
 		}
 	}
+
 //init
 	private void jbInit() throws Exception {
 		jLabel1.setText("Solution File Name");
@@ -48,6 +50,7 @@ public class SolutionGradingDlg extends JDialog {
 		this.getContentPane().add(labelSolutionFileName, null);
 		this.getContentPane().add(buttonOK, null);
 	}
+
 //show function
 	void show(Solution solution) {
 		theSolution = solution;

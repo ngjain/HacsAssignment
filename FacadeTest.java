@@ -1,6 +1,5 @@
 package hacs;
 
-
 /**
  * Title:        HacsAssignmentTest
  * Description:  SER515:Testing and reuse
@@ -11,10 +10,6 @@ package hacs;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class FacadeTest {
@@ -23,22 +18,7 @@ class FacadeTest {
 
 	Assignment newass = new Assignment();
 	ClassCourseList thecourselist;
-	Course theCourse = new Course("FINDLER",1);
-	@BeforeAll
-	static void setUpBeforeClass() throws Exception {
-	}
-
-	@AfterAll
-	static void tearDownAfterClass() throws Exception {
-	}
-
-	@BeforeEach
-	void setUp() throws Exception {
-	}
-
-	@AfterEach
-	void tearDown() throws Exception {
-	}
+	Course theCourse = new Course("FINDLER", 1);
 
 	@Test
 	final void testFacade() {
@@ -48,75 +28,77 @@ class FacadeTest {
 
 	@Test
 	final void testLogin() {
-		//Login is called that uses swing
+		// Login is called that uses swing
 	}
-	
 
 	// test if assugnment can be added
 	@Test
 	final void testAddAssignment() {
 		theCourse.addAssignment(newass);
-		assertEquals(theCourse.assignmentlist.size(),1);
+		assertEquals(theCourse.assignmentlist.size(), 1);
 	}
 
 	@Test
 	final void testViewAssignment() {
-	//SWINGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+		// SWINGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
 	}
 
 	@Test
 	final void testGradeSolution() {
-		//SWINGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+		// SWINGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
 	}
 
-	//check if fncion can be reportd
-	@Test 
+	// check if fncion can be reportd
+	@Test
 	final void testReportSolutions() {
 		facade.reportSolutions(newass);
 		theCourse.addAssignment(newass);
-		assertEquals(theCourse.assignmentlist.size(),1);
+		assertEquals(theCourse.assignmentlist.size(), 1);
 	}
 
-	//check if solution can be submitted
+	// check if solution can be submitted
 	@Test
 	final void testSubmitSolution() {
-		
+
 	}
 
 	@Test
 	final void testRemind() {
-		//Tested in person.java
+		// Tested in person.java
 	}
 
+//Creation of user is tested by comparing name for facade strUserName and the value of strUserName
 	@Test
 	final void testCreateUser() {
 		UserInfoItem userinfoitem = new UserInfoItem();
-		userinfoitem.UserType  = UserInfoItem.USER_TYPE.Student ;
+		userinfoitem.UserType = UserInfoItem.USER_TYPE.Student;
 		userinfoitem.strUserName = "FIndler";
 		facade.createUser(userinfoitem);
-		assertEquals(facade.theperson.UserName,"FIndler");
+		assertEquals(facade.theperson.UserName, "FIndler");
 	}
 
+//CourseList  creation is tested previously
 	@Test
 	final void testCreateCourseList() {
 		thecourselist = new ClassCourseList();
-		//cxreated in ClassCourseList just making object
+		// cxreated in ClassCourseList just making object
 	}
 
+//Done above
 	@Test
 	final void testAttachCourseToUser() {
-		//we attach course to user. the output of below function tested above
+		// we attach course to user. the output of below function tested above
 		facade.attachCourseToUser();
 	}
 
 	@Test
 	final void testSelectCourse() {
-		//SWINGGGGGGGGGGGGG
+		// SWINGGGGGGGGGGGGG
 	}
 
 	@Test
 	final void testCourseOperation() {
-		//To be tested in person.java
+		// To be tested in person.java
 	}
 
 }

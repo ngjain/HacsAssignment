@@ -8,10 +8,11 @@ package hacs;
  */
 
 public class Instructor extends Person {
-	//constrictor
+	// constrictor
 	public Instructor() {
 		type = 1;// type=1 :instructor
 	}
+
 //defing course level and initialising menu for instructor
 	public CourseMenu createCourseMenu(Course theCourse, int theLevel) {
 		if (theLevel == 0)/// 0: Highlevel defined in CourseSeletDlg.
@@ -23,6 +24,7 @@ public class Instructor extends Person {
 		}
 		return theCourseMenu;
 	}
+
 //abstract functions
 	public boolean showMenu() {
 		super.showMenu();

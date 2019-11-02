@@ -1,7 +1,5 @@
 package hacs;
 
-
-
 /**
  * Title:        HacsAssignmentTest
  * Description:  SER515:Testing and reuse
@@ -18,7 +16,7 @@ class HighLevelCourseMenuTest {
 
 	@Test
 	void testHighLevelCourseMenu() {
-		//Constructor
+		// Constructor
 		System.out.println("HighLevelCourseMenu");
 	}
 

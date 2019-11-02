@@ -10,67 +10,47 @@ package hacs;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.ArrayList;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class ListIteratorTest {
-
-	List<String> thelist = Arrays.asList("foo", "bar", "baz");
-	
-	ListIterator listiterator = new ListIterator(thelist);
-
-	
-	
-	
-	
-	
-	
-	int currentnumber = -1;
-
-	@BeforeAll
-	static void setUpBeforeClass() throws Exception {
-	}
-
-	@AfterAll
-	static void tearDownAfterClass() throws Exception {
-	}
-
-	@BeforeEach
-	void setUp() throws Exception {
-	}
-
-	@AfterEach
-	void tearDown() throws Exception {
-		
-	}
-
+//Constructor
 	@Test
-	final void testListIterator() {
-		// constructor
-		System.out.println("listiterator object created.");
+	void testListIterator() {
+		ArrayList<Object> testList = new ArrayList<>();
+		testList.add(1);
+		ListIterator listIterator = new ListIterator(testList);
+		assertEquals(1, listIterator.thelist.size());
 	}
 
-
+//Check if list has next value
 	@Test
-	final void testHasNext() {
-		//tested below with next()
+	void testHasNext() {
+		ArrayList<Object> testList = new ArrayList<>();
+		testList.add(5);
+		ListIterator listIterator = new ListIterator(testList);
+		assertFalse(listIterator.hasNext());
 	}
 
+//return the next value in the list
 	@Test
-	final void testNext() {
-		assertEquals(listiterator.next(), "bar");
+	void testNext() {
+		ArrayList<Object> testList = new ArrayList<>();
+		testList.add(10);
+		ListIterator listIterator = new ListIterator(testList);
+		assertNull(listIterator.next());
 	}
-	@Test
-	final void testRemove() {
 
-		listiterator.remove();
-		assertEquals(listiterator.next(), "bar");
+//Remove the value at given location
+	@Test
+	void testRemove() {
+		ArrayList<Object> testList = new ArrayList<>();
+		testList.add(2);
+		ListIterator listIterator = new ListIterator(testList);
+		listIterator.next();
+		listIterator.remove();
+		assertEquals(0, listIterator.thelist.size());
 	}
 
 }

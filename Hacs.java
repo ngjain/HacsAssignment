@@ -8,7 +8,7 @@ package hacs;
  * @author mjfindler
  * @version 2.0
  * 
- * Update to Java 8
+ *          Update to Java 8
  */
 
 public class Hacs {
@@ -19,13 +19,13 @@ public class Hacs {
 	}
 
 	public static void main(String[] args) {
-		//user defined
+		// user defined
 //		String strUsername;
 //		String strUserType = null;
-	
+
 		UserInfoItem userinfoitem = new UserInfoItem();
 		theFacade.createCourseList();
-		//create course list
+		// create course list
 		while (true) {
 			boolean bExit = false;
 			bExit = Facade.login(userinfoitem);

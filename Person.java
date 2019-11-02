@@ -18,12 +18,15 @@ abstract public class Person {
 	CourseMenu theCourseMenu;
 	Course CurrentCourse;
 	Assignment CurrentAssignment;
+
 //constructor
 	public Person() {
 		CourseList = new ClassCourseList();
 	}
+
 //abstract coursemenu
 	abstract public CourseMenu createCourseMenu(Course theCourse, int theLevel);
+
 //swinggggggggggg
 	public void showAddButton() {
 		theCourseMenu.ShowAddButtons();
@@ -50,9 +53,10 @@ abstract public class Person {
 	}
 
 	// show the assignment list
+	@SuppressWarnings("unchecked")
 	public boolean showMenu() {
 		// create a iterator for the assignment list
-                //    Iterator theIter=new ListIterator(CurrentCourse.AssList );
+		// Iterator theIter=new ListIterator(CurrentCourse.AssList );
 		Iterator<?> theIter = CurrentCourse.assignmentlist.iterator();
 		theCourseMenu.theCourse = CurrentCourse;
 		Assignment theAssignment;
@@ -62,10 +66,12 @@ abstract public class Person {
 		}
 		return false;
 	}
+
 //return course list
 	public ClassCourseList GetCourseList() {
 		return CourseList;
 	}
+
 //add course
 	public void AddCourse(Course theCourse) {
 		CourseList.add(theCourse);

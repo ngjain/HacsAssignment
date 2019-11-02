@@ -12,13 +12,14 @@ import java.awt.event.*;
  */
 //swinggggggggggggggggggggggggggggggggg
 public class CourseSelectDlg extends JDialog {
-	
+
 	private static final long serialVersionUID = 1L;
 	// 0 HighLevel presentation 1 LowLevel Experiment
 	ClassCourseList theCourseList;
 	Course SelectedCourse;
 	int nCourseLevel = 0;
 	boolean m_bLogout = false;
+	@SuppressWarnings("rawtypes")
 	JComboBox CourseNameCom = new JComboBox();
 	JRadioButton HighLevelRadio = new JRadioButton();
 	JRadioButton LowLevelRadio = new JRadioButton();
@@ -26,6 +27,7 @@ public class CourseSelectDlg extends JDialog {
 	JButton OKButton = new JButton();
 	ButtonGroup buttonGroup1 = new ButtonGroup();
 	JButton buttonLogout = new JButton();
+
 //initiwlise window
 	public CourseSelectDlg() {
 		try {
@@ -36,6 +38,7 @@ public class CourseSelectDlg extends JDialog {
 			e.printStackTrace();
 		}
 	}
+
 //initialisation
 	private void jbInit() throws Exception {
 		this.getContentPane().setLayout(null);
@@ -77,6 +80,7 @@ public class CourseSelectDlg extends JDialog {
 	 * return the pointer pointing to the Course object return the Course Type
 	 */
 
+	@SuppressWarnings("unchecked")
 	public Course ShowDlg(ClassCourseList courseList) {
 
 		theCourseList = courseList;

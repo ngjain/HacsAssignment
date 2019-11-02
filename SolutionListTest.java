@@ -15,9 +15,10 @@ import org.junit.jupiter.api.Test;
 class SolutionListTest {
 
 	SolutionList solutionlist = new SolutionList();
+
 	@Test
 	void testSolutionList() {
-		//Constructor
+		// Constructor
 		System.out.print("SolutionList object creeatedd");
 	}
 

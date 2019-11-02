@@ -2,7 +2,6 @@ package hacs;
 
 //import static org.junit.jupiter.api.Assertions.*;
 
-
 /**
  * Title:        HacsAssignmentTest
  * Description:  SER515:Testing and reuse
@@ -16,20 +15,21 @@ import org.junit.jupiter.api.Test;
 class ReminderTest {
 
 	Reminder reminder = new Reminder();
+
 	@Test
 	void testReminder() {
-		//constructor	
+		// constructor
 		System.out.println("Reminder object created.");
 	}
 
 	@Test
 	void testShowReminder() {
-		//SWINGGGGGGGGGGGGGGGGGG
+		// SWINGGGGGGGGGGGGGGGGGG
 	}
 
 	@Test
 	void testButtonOK_actionPerformed() {
-		//SWINGGGGGGGGGGGGGGGGGGGGGGG
+		// SWINGGGGGGGGGGGGGGGGGGGGGGG
 	}
 
 }

@@ -15,9 +15,10 @@ public class LowLevelCourseMenu extends CourseMenu {
 
 	private static final long serialVersionUID = 1L;
 
-	//constructor
+	// constructor
 	public LowLevelCourseMenu() {
 	}
+
 // swinggggggg
 	void ShowMenu(Course theCourse) {
 		setVisible(true);

@@ -1,4 +1,5 @@
 package hacs;
+
 //SWINGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
 import javax.swing.*;
 import java.awt.*;
@@ -14,9 +15,8 @@ import java.util.*;
 //swingggggggggggggggggg
 public class StudentAssignmentMenu extends AssignmentMenu {
 
-
 	private static final long serialVersionUID = 1L;
-	////  class AssignmentMenu
+	//// class AssignmentMenu
 	private boolean boolSubmit = false;
 	private Solution theSolution;
 	private Assignment theAssignment;
@@ -34,6 +34,7 @@ public class StudentAssignmentMenu extends AssignmentMenu {
 	JLabel jLabel5 = new JLabel();
 	JLabel jLabel6 = new JLabel();
 	JLabel jLabel7 = new JLabel();
+
 //constructor
 	public StudentAssignmentMenu() {
 		try {
@@ -42,6 +43,7 @@ public class StudentAssignmentMenu extends AssignmentMenu {
 			e.printStackTrace();
 		}
 	}
+
 //init
 	private void jbInit() throws Exception {
 		jLabel1.setText("Assignment : ");

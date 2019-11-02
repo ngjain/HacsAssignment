@@ -12,7 +12,7 @@ import java.util.*;
  * @author mjfindler
  * @version 2.0
  * 
- * update to Java 8
+ *          update to Java 8
  */
 
 public class Solution {
@@ -21,9 +21,11 @@ public class Solution {
 	Date thesubmitdata = new Date();
 	int thegrade = 100;
 	boolean reported = false;
+
 //constructor
 	public Solution() {
 	}
+
 //it returns the name of the assignment and the grade given to it
 	@Override
 	public String toString() {
@@ -36,6 +38,7 @@ public class Solution {
 
 		return (string);
 	}
+
 //it returns the grade as a string
 	String getGradeString() {
 		if (isReported())
@@ -43,20 +46,24 @@ public class Solution {
 		else
 			return "-1";
 	}
+
 //it returns the grade for the assignment
 	int getGradeInt() {
 		return thegrade;
 	}
+
 //set reported
 	public void setReported(boolean reported) {
 		this.reported = reported;
 	}
+
 //check if the assignmmet is reported
 	public boolean isReported() {
 		return reported;
 	}
+
 	public void setTheAuthor(String string) {
 		theauthor = string;
-		
+
 	}
 }
